@@ -1,0 +1,56 @@
+.points-calculator .title,
+.points-calculator .title-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.points-calculator .title-parent {
+  align-items: flex-start;
+  padding: var(--padding-32) var(--padding-40);
+  gap: var(--gap-32);
+  text-align: left;
+  font-size: var(--fs-32);
+  color: var(--Navy);
+  font-family: var(--font-inter);
+}
+.points-calculator .title {
+  align-items: center;
+}
+.points-calculator .earn-beyond-the-sky-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.points-calculator .earn-beyond-the {
+  margin: 0;
+  position: relative;
+}
+.points-calculator .cards {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap-20);
+  max-width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .points-calculator .title-parent {
+    gap: var(--gap-16);
+  }
+  .points-calculator .earn-beyond-the {
+    font-size: var(--fs-26);
+  }
+}
+@media screen and (max-width: 675px) {
+  .points-calculator .title-parent {
+    padding-top: var(--padding-21);
+    padding-bottom: var(--padding-21);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .points-calculator .earn-beyond-the {
+    font-size: var(--fs-19);
+  }
+}
