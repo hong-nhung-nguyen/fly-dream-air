@@ -1,0 +1,149 @@
+.rewards-store .main-content,
+.rewards-store .welcome-header {
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+}
+.rewards-store .main-content {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-64) var(--padding-40) var(--padding-32);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--fs-48);
+  color: var(--Navy);
+  font-family: var(--font-inter);
+}
+.rewards-store .welcome-header {
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-20);
+}
+.rewards-store .welcome-message {
+  gap: var(--gap-16);
+  max-width: 100%;
+}
+.rewards-store .welcome-header2,
+.rewards-store .welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rewards-store .redeem-your-elevated {
+  margin: 0;
+  width: 794px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rewards-store .use-your-hard-earned-points-to-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-18);
+  color: var(--color-darkslategray);
+}
+.rewards-store .use-your-hard-earned {
+  width: 623px;
+  position: relative;
+  line-height: 28.8px;
+  display: flex;
+  align-items: center;
+}
+.rewards-store .current-balance-card {
+  box-shadow: var(--shadow-drop-1);
+  border-radius: var(--br-12);
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-24);
+  box-sizing: border-box;
+  gap: var(--gap-20);
+  min-width: 300px;
+  font-size: var(--fs-12);
+  color: var(--color-darkslategray);
+}
+.rewards-store .container34,
+.rewards-store .container35 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rewards-store .container34 {
+  gap: var(--gap-3);
+}
+.rewards-store .container35 {
+  align-self: stretch;
+}
+.rewards-store .current-balance {
+  position: relative;
+}
+.rewards-store .container36 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-32);
+  color: var(--Navy);
+}
+.rewards-store .h2 {
+  margin: 0;
+  position: relative;
+}
+.rewards-store .background10 {
+  border-radius: var(--br-9999);
+  background-color: var(--color-steelblue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-12);
+}
+.rewards-store .container37 {
+  height: var(--height-20);
+  width: var(--width-20);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1350px) {
+  .rewards-store .welcome-header {
+    flex-wrap: wrap;
+  }
+  .rewards-store .current-balance-card,
+  .rewards-store .welcome-message {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .rewards-store .welcome-message {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rewards-store .main-content {
+    gap: var(--gap-32);
+  }
+  .rewards-store .redeem-your-elevated {
+    font-size: 38px;
+  }
+  .rewards-store .h2 {
+    font-size: var(--fs-26);
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rewards-store .main-content {
+    gap: var(--gap-16);
+  }
+  .rewards-store .redeem-your-elevated {
+    font-size: 29px;
+  }
+  .rewards-store .current-balance-card {
+    flex-wrap: wrap;
+  }
+  .rewards-store .h2 {
+    font-size: var(--fs-19);
+    line-height: 23px;
+  }
+}
