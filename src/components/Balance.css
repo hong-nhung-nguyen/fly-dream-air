@@ -1,0 +1,206 @@
+.member-dashboard .balance {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-64) var(--padding-40) var(--padding-32);
+  box-sizing: border-box;
+  gap: var(--gap-32);
+  max-width: 100%;
+}
+.member-dashboard .card-base-wrapper {
+  min-height: 276px;
+  flex: 1 1 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-inter);
+}
+.member-dashboard .card-base,
+.member-dashboard .card-base-wrapper,
+.member-dashboard .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.member-dashboard .card-base {
+  align-self: stretch;
+  flex: 1;
+  box-shadow: var(--shadow-drop-1);
+  border-radius: var(--br-24);
+  background-color: var(--White);
+  border: var(--border-1);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-24) var(--padding-40);
+}
+.member-dashboard .content {
+  padding: var(--padding-10) var(--padding-0);
+}
+.member-dashboard .balance-details {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-8);
+}
+.member-dashboard .available-balance-wrapper,
+.member-dashboard .balance-details {
+  display: flex;
+  align-items: flex-start;
+}
+.member-dashboard .available-balance {
+  position: relative;
+}
+.member-dashboard .balance-value {
+  display: flex;
+  align-items: flex-start;
+  font-size: var(--fs-40);
+  color: var(--Navy);
+}
+.member-dashboard .dream-miles-label {
+  margin: 0;
+  position: relative;
+}
+.member-dashboard .miles-label {
+  display: flex;
+  align-items: flex-start;
+  font-size: var(--fs-14);
+  color: var(--Blue);
+}
+.member-dashboard .dreammiles {
+  position: relative;
+}
+.member-dashboard .button {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-24) var(--padding-0) var(--padding-10);
+  gap: var(--gap-16);
+}
+.member-dashboard .button-primary {
+  width: 200.3px;
+  padding: var(--padding-12) var(--padding-20);
+  box-sizing: border-box;
+}
+.member-dashboard .card-base-container,
+.member-dashboard .card-base2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.member-dashboard .card-base-container {
+  flex: 0 1 442.7px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--fs-20);
+  color: var(--color-darkred-100);
+  font-family: var(--font-inter);
+}
+.member-dashboard .card-base2 {
+  align-self: stretch;
+  box-shadow: var(--shadow-drop-1);
+  border-radius: var(--br-24);
+  background-color: var(--color-mistyrose);
+  border: var(--border-1);
+  overflow: hidden;
+  padding: var(--padding-22) 23px;
+}
+.member-dashboard .expiry-icon-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-0) var(--padding-0) var(--padding-10);
+}
+.member-dashboard .expiry-icon {
+  border-radius: var(--br-999);
+  background-color: var(--color-darkred-200);
+  display: flex;
+  align-items: center;
+  padding: var(--padding-15);
+  box-sizing: border-box;
+}
+.member-dashboard .vector-icon {
+  width: var(--width-20);
+  position: relative;
+  max-height: 100%;
+}
+.member-dashboard .expiry-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-10) var(--padding-0);
+}
+.member-dashboard .points-expiring-soon {
+  margin: 0;
+  position: relative;
+}
+.member-dashboard .expiry-details2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-10) var(--padding-0);
+  font-size: var(--fs-14);
+}
+.member-dashboard .of-your-dreammiles {
+  flex: 1;
+  position: relative;
+  line-height: var(--lh-28);
+}
+.member-dashboard .expiry-options {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-10) var(--padding-0) var(--padding-0);
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-darkred-100);
+  display: flex;
+  align-items: flex-start;
+}
+.member-dashboard .expiry-options:hover {
+  background-color: var(--color-firebrick);
+}
+.member-dashboard .view-redemption-options {
+  position: relative;
+  font-size: var(--fs-14);
+  line-height: var(--lh-28);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-darkred-100);
+  text-align: left;
+}
+@media screen and (max-width: 1350px) {
+  .member-dashboard .balance {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .member-dashboard .card-base-wrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .member-dashboard .balance {
+    gap: var(--gap-16);
+  }
+  .member-dashboard .dream-miles-label {
+    font-size: var(--fs-32);
+  }
+  .member-dashboard .button {
+    flex-wrap: wrap;
+  }
+  .member-dashboard .card-base-container {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .member-dashboard .balance {
+    padding-top: 42px;
+    padding-bottom: var(--padding-21);
+    box-sizing: border-box;
+  }
+  .member-dashboard .dream-miles-label {
+    font-size: var(--fs-24);
+  }
+  .member-dashboard .points-expiring-soon {
+    font-size: var(--fs-16);
+  }
+}
