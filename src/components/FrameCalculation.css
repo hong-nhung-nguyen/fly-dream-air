@@ -1,0 +1,212 @@
+.points-calculator .calculator-card-section-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-32) var(--padding-0);
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-inter);
+}
+.points-calculator .calculator-card-section {
+  width: 768px;
+  box-shadow: var(--shadow-drop-1);
+  border-radius: var(--br-24);
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 49px var(--padding-48) var(--padding-48);
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  max-width: 768px;
+}
+.points-calculator .decorative-background-element {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  margin: 0 !important;
+  top: -79px;
+  right: -80px;
+  filter: blur(64px);
+  border-radius: var(--br-9999);
+  background-color: var(--color-lightskyblue);
+  opacity: 0.1;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.points-calculator .container2 {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+  grid-template-rows: 218px;
+  gap: var(--gap-48);
+  z-index: 1;
+  flex-shrink: 0;
+}
+.points-calculator .input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-32);
+  grid-column: 1;
+  grid-row: 1;
+}
+.points-calculator .container3 {
+  gap: var(--gap-8);
+}
+.points-calculator .container3,
+.points-calculator .label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.points-calculator .flight-cost-usd {
+  position: relative;
+}
+.points-calculator .backgroundborder,
+.points-calculator .container4 {
+  align-self: stretch;
+  color: var(--Navy);
+}
+.points-calculator .container4 {
+  border: 0;
+  background-color: transparent;
+  height: 62px;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: var(--fs-20);
+}
+.points-calculator .backgroundborder {
+  border-radius: var(--br-8);
+  background-color: var(--color-steelblue-100);
+  border: 1px solid var(--color-lavender);
+  flex-direction: column;
+  padding: var(--padding-16);
+  font-size: var(--fs-16);
+}
+.points-calculator .backgroundborder,
+.points-calculator .container5,
+.points-calculator .margin {
+  display: flex;
+  align-items: flex-start;
+}
+.points-calculator .container5 {
+  align-self: stretch;
+}
+.points-calculator .margin {
+  flex-direction: column;
+  padding: var(--padding-2) var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+}
+.points-calculator .icon2 {
+  width: var(--width-20);
+  height: var(--height-19);
+  position: relative;
+}
+.points-calculator .container6,
+.points-calculator .margin2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.points-calculator .margin2 {
+  padding: var(--padding-0) var(--padding-0) var(--padding-0) var(--padding-12);
+}
+.points-calculator .container6 {
+  gap: var(--gap-4);
+}
+.points-calculator .gold-member-bonus {
+  position: relative;
+}
+.points-calculator .container7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-14);
+  color: var(--color-darkslategray-100);
+}
+.points-calculator .members-earn-5 {
+  position: relative;
+  line-height: 21px;
+}
+.points-calculator .result-area {
+  border-left: 1px solid var(--color-silver);
+  align-items: flex-end;
+  justify-content: center;
+  padding: 50.1px var(--padding-0) 50.1px var(--padding-48);
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+.points-calculator .container8,
+.points-calculator .margin3,
+.points-calculator .result-area {
+  display: flex;
+  flex-direction: column;
+}
+.points-calculator .margin3 {
+  align-items: flex-start;
+  padding: var(--padding-0) var(--padding-0) var(--padding-8);
+}
+.points-calculator .container8 {
+  align-items: flex-end;
+}
+.points-calculator .margin4 {
+  width: 131.9px;
+  height: 68.8px;
+  position: relative;
+  font-size: var(--fs-48);
+  color: var(--Blue);
+}
+.points-calculator .container9 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-0) var(--padding-0) 0.8px;
+  flex-shrink: 0;
+}
+.points-calculator .h2 {
+  margin: 0;
+  position: relative;
+}
+.points-calculator .background {
+  border-radius: var(--br-9999);
+  background-color: var(--color-darkslategray-200);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-4) var(--padding-11);
+  font-size: var(--fs-14);
+}
+@media screen and (max-width: 750px) {
+  .points-calculator .calculator-card-section {
+    padding-left: var(--padding-24);
+    padding-right: var(--padding-24);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .points-calculator .h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .points-calculator .calculator-card-section-wrapper {
+    padding-top: var(--padding-21);
+    padding-bottom: var(--padding-21);
+    box-sizing: border-box;
+  }
+  .points-calculator .h2 {
+    font-size: 29px;
+    line-height: var(--lh-32);
+  }
+}

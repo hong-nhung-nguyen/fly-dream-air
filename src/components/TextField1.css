@@ -1,0 +1,30 @@
+.member-id-field {
+  align-self: stretch;
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-8);
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--Muted);
+  font-family: var(--font-inter);
+}
+.field,
+.label {
+  align-self: stretch;
+  font-weight: 600;
+}
+.label {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: var(--lh-20);
+}
+.field {
+  border: 0;
+  background-color: transparent;
+  font-family: var(--font-inter);
+  font-size: var(--fs-12);
+  color: var(--color-dimgray-200);
+}

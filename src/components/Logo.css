@@ -1,0 +1,19 @@
+.logo {
+  width: var(--width-64);
+  height: var(--height-64);
+  border-radius: var(--br-9999);
+  background-color: var(--BG);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8) var(--padding-6);
+  box-sizing: border-box;
+}
+.icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
