@@ -1,0 +1,92 @@
+.action-cards-container,
+.card-base5 {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+}
+.action-cards-container {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-32) var(--padding-40);
+  gap: var(--gap-20);
+  text-align: left;
+  font-size: var(--fs-20);
+  color: var(--Navy);
+  font-family: var(--font-inter);
+}
+.card-base5 {
+  width: var(--width-426_7);
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-24);
+  background-color: var(--White);
+  border: var(--border-1);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-22) var(--padding-23);
+  cursor: pointer;
+}
+.content7 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-10);
+  gap: var(--gap-16);
+}
+.content-inner,
+.flight-icon-wrapper {
+  border-radius: var(--br-8);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-inner {
+  height: var(--height-48);
+  width: 45px;
+  background-color: var(--color-gray-100);
+  padding: var(--padding-10) var(--padding-6);
+}
+.flight-icon-wrapper {
+  height: var(--height-32);
+  width: 33px;
+  border: 2px solid var(--Navy);
+  flex-direction: column;
+  padding: var(--padding-2) var(--padding-4);
+  flex-shrink: 0;
+}
+.flight-icon {
+  width: 21px;
+  position: relative;
+  max-height: 100%;
+}
+.points-calculator-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-10);
+}
+.points-calculator2 {
+  margin: 0;
+  position: relative;
+}
+.estimate-earnings-for {
+  position: relative;
+  font-size: var(--fs-14);
+  color: var(--Muted);
+}
+@media screen and (max-width: 1410px) {
+  .action-cards-container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content7 {
+    flex-wrap: wrap;
+  }
+  .points-calculator2 {
+    font-size: var(--fs-16);
+  }
+}
