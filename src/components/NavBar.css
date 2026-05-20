@@ -1,0 +1,10 @@
+.nav-bar {
+  width: var(--width-1440);
+  box-shadow: var(--shadow-drop-1);
+  backdrop-filter: blur(24px);
+  background-color: var(--White);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
