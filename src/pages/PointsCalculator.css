@@ -1,0 +1,76 @@
+.points-calculator {
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.points-calculator .content-container {
+  width: var(--width-1440);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.points-calculator .main-content {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 64px var(--padding-40) var(--padding-32);
+  text-align: left;
+  font-size: var(--fs-48);
+  color: var(--Navy);
+  font-family: var(--font-inter);
+}
+.points-calculator .main-content,
+.points-calculator .welcome-header,
+.points-calculator .welcome-header2 {
+  display: flex;
+  flex-direction: column;
+}
+.points-calculator .welcome-header {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-16);
+}
+.points-calculator .welcome-header2 {
+  align-items: flex-start;
+}
+.points-calculator .points-calculator2 {
+  margin: 0;
+  position: relative;
+}
+.points-calculator .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-darkslategray-100);
+}
+.points-calculator .estimate-your-rewards {
+  width: 623px;
+  position: relative;
+  line-height: 28.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 750px) {
+  .points-calculator .main-content {
+    gap: var(--gap-32);
+  }
+  .points-calculator .points-calculator2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .points-calculator .main-content {
+    gap: var(--gap-16);
+  }
+  .points-calculator .points-calculator2 {
+    font-size: 29px;
+  }
+}
