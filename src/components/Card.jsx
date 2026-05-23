@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { Typography, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import "./Card.css";
@@ -14,17 +13,10 @@ const Card = ({
   enjoyComplimentaryFoodDrinks,
   pts,
 }) => {
-  const imageIconStyle = useMemo(() => {
-    return {
-      width: imageIconWidth,
-      height: imageIconHeight,
-      maxHeight: imageIconMaxHeight,
-    };
-  }, [imageIconWidth, imageIconHeight, imageIconMaxHeight]);
 
   return (
     <Box className={`card-1 ${className}`}>
-      <img className="image-icon" alt="" src={image} style={imageIconStyle} />
+      <img className="image-icon" alt="" src={image} />
       <Box className="content8">
         <Box className="reward-titles-parent">
           <Box className="reward-titles">

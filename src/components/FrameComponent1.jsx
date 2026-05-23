@@ -45,7 +45,7 @@ const FrameComponent1 = ({ className = "" }) => {
   ]);
 
   const onFrameContainerClick = useCallback(() => {
-    navigate("/");
+    navigate("/05-rewards-store");
   }, [navigate]);
 
   return (

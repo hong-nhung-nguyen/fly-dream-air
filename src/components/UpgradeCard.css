@@ -17,6 +17,7 @@
 .member-dashboard .background-icon {
   align-self: stretch;
   width: var(--width-235_2);
+  min-height: 100%;
   max-height: 100%;
   object-fit: cover;
   z-index: 1;
