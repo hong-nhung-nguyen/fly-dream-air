@@ -1,8 +1,11 @@
 import { Typography, Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Balance.css";
 
 const Balance = ({ className = "" }) => {
+  const navigate = useNavigate();
+
   return (
     <section className={`balance ${className}`}>
       <section className="card-base-wrapper">
@@ -39,6 +42,7 @@ const Balance = ({ className = "" }) => {
               className="button-primary"
               disableElevation
               variant="contained"
+              onClick={() => navigate("/05-rewards-store")}
               sx={{
                 textTransform: "none",
                 color: "#fff",
@@ -99,7 +103,7 @@ const Balance = ({ className = "" }) => {
               them now to avoid losing them.
             </div>
           </Box>
-          <button className="expiry-options">
+          <button className="expiry-options" onClick={() => navigate("/05-rewards-store")}>
             <div className="view-redemption-options">
               View Redemption Options
             </div>
