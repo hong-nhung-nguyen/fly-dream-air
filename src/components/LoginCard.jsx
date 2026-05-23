@@ -11,7 +11,7 @@ const LoginCard = ({ className = "" }) => {
 
   const onSubmit = useCallback((event) => {
     event.preventDefault();
-    navigate("/");
+    navigate("/home");
   }, [navigate]);
 
   return (

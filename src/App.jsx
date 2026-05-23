@@ -69,7 +69,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MemberDashboard />} />
+      <Route path="/" element={<Navigate to="/01-login" replace />} />
       <Route path="/home" element={<Home />} />
       <Route path="/01-login" element={<Login />} />
       <Route path="/02-points-calculation" element={<PointsCalculation />} />
