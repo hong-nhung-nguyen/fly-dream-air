@@ -42,18 +42,13 @@ const Container = ({ className = "" }) => {
           }
         }}
       >
-        <Button
-          className="nav-logo-mark"
-          disableElevation
-          variant="contained"
-          sx={{
-            background: "#001e40",
-            borderRadius: "0px 0px 0px 0px",
-            "&:hover": { background: "#001e40" },
-            width: 32,
-            height: 26,
-          }}
+        <img 
+          className="nav-logo-mark" 
+          alt="FlyDreamAir" 
+          src="/Icon.svg" 
+          style={{ width: 32, height: 26, objectFit: "contain" }} 
         />
+        
         <Typography
           className="flydreamair2"
           variant="inherit"
