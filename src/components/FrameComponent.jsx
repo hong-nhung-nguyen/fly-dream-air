@@ -8,11 +8,11 @@ const FrameComponent = ({ className = "" }) => {
   const navigate = useNavigate();
 
   const onPrimaryClick = useCallback(() => {
-    navigate("/");
+    navigate("/05-rewards-store");
   }, [navigate]);
 
   const onTierCardContainerClick = useCallback(() => {
-    navigate("/");
+    navigate("/03-member-dashboard");
   }, [navigate]);
 
   return (
