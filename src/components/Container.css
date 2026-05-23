@@ -87,3 +87,10 @@
   cursor: pointer;
   color: var(--Muted);
 }
+
+.nav-link.active .nav-label,
+.nav-link.active .nav-rewards-label {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--Navy);
+}
