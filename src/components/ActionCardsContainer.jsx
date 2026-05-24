@@ -8,8 +8,12 @@ import "./ActionCardsContainer.css";
 const ActionCardsContainer = ({ className = "" }) => {
   const navigate = useNavigate();
 
-  const onBaseContainerClick = useCallback(() => {
-    navigate("/05-rewards-store");
+  const onBookFlightClick = useCallback(() => {
+    // do nothing
+  }, []);
+
+  const onActivityHistoryClick = useCallback(() => {
+    navigate("/03-member-dashboard");
   }, [navigate]);
 
   const onBaseContainerClick1 = useCallback(() => {
@@ -19,7 +23,7 @@ const ActionCardsContainer = ({ className = "" }) => {
   return (
     <section className={`action-cards-container ${className}`}>
       <Base
-        onLinkContainerClick={onBaseContainerClick}
+        onLinkContainerClick={onBookFlightClick}
         actionIcons="/Action-Icons.svg"
         bookAFlight="Book a Flight"
         usePointsOrCashForYourNext="Use points or cash for your next trip."
@@ -52,7 +56,7 @@ const ActionCardsContainer = ({ className = "" }) => {
         </Box>
       </Box>
       <Base
-        onLinkContainerClick={onBaseContainerClick}
+        onLinkContainerClick={onActivityHistoryClick}
         actionIcons="/Vector1.svg"
         bookAFlight="Activity History"
         usePointsOrCashForYourNext="Review your past flights and points."

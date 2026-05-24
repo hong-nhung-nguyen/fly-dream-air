@@ -50,7 +50,7 @@ const FrameComponent = ({ className = "" }) => {
             <Box className="backgroundborder">
               <Box className="container5">
                 <Box className="margin">
-                  <img className="icon2" alt="" src="/Icon.svg" />
+                  <img className="icon2" alt="" src="/Icon1.svg" />
                 </Box>
                 <Box className="margin2">
                   <Box className="container6">

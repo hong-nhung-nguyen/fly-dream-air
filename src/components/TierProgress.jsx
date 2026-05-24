@@ -21,7 +21,7 @@ const TierProgress = ({ className = "" }) => {
               </Box>
               <Box className="background">
                 <Box className="container">
-                  <img className="icon" loading="lazy" alt="" src="/Icon.svg" />
+                  <img className="icon" loading="lazy" alt="" src="/Icon1.svg" />
                 </Box>
                 <Box className="margin">
                   <Typography

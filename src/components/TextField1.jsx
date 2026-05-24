@@ -31,6 +31,7 @@ const TextField1 = ({
       <TextField
         className="field"
         placeholder={placeholder}
+        type={lABEL === "PASSWORD" ? "password" : "text"}
         variant="outlined"
         sx={{
           "& fieldset": { borderColor: "#d6dde7" },

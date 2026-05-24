@@ -1,14 +1,16 @@
 import { useCallback } from "react";
 import { Button, Typography, Box } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Container.css";
 
 const Container = ({ className = "" }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const path = location.pathname;
 
   const onLinkContainerClick = useCallback(() => {
-    navigate("/");
+    navigate("/03-member-dashboard");
   }, [navigate]);
 
   const onLinkContainerClick1 = useCallback(() => {
@@ -40,18 +42,13 @@ const Container = ({ className = "" }) => {
           }
         }}
       >
-        <Button
-          className="nav-logo-mark"
-          disableElevation
-          variant="contained"
-          sx={{
-            background: "#001e40",
-            borderRadius: "0px 0px 0px 0px",
-            "&:hover": { background: "#001e40" },
-            width: 32,
-            height: 26,
-          }}
+        <img 
+          className="nav-logo-mark" 
+          alt="FlyDreamAir" 
+          src="/Icon.svg" 
+          style={{ width: 32, height: 26, objectFit: "contain" }} 
         />
+        
         <Typography
           className="flydreamair2"
           variant="inherit"
@@ -66,14 +63,14 @@ const Container = ({ className = "" }) => {
         </Typography>
       </Box>
       <Box className="nav-links">
-        <Box className="nav-link nav-link-dashboard" onClick={onLinkContainerClick}>
+        <Box className={`nav-link nav-link-dashboard ${path === '/03-member-dashboard' ? 'active' : ''}`} onClick={onLinkContainerClick}>
           <div className="nav-label">Member Dashboard</div>
         </Box>
-        <Box className="nav-link nav-link-calculator" onClick={onLinkContainerClick1}>
+        <Box className={`nav-link nav-link-calculator ${path === '/02-points-calculation' ? 'active' : ''}`} onClick={onLinkContainerClick1}>
           <div className="nav-label">Points Calculator</div>
         </Box>
-        <Box className="nav-link nav-link-rewards">
-          <div className="nav-rewards-label" onClick={onRewardsStoreTextClick}>
+        <Box className={`nav-link nav-link-rewards ${path === '/05-rewards-store' ? 'active' : ''}`} onClick={onRewardsStoreTextClick}>
+          <div className="nav-rewards-label" >
             Rewards Store
           </div>
         </Box>

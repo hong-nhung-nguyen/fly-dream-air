@@ -57,7 +57,9 @@ const MainContent = ({ className = "" }) => {
             </Box>
           </Box>
           <Box className="background10">
-            <Box className="container37" />
+            <Box className="container37">
+              <img src="/Icon1.svg" alt="star" style={{ width: "100%", height: "100%" }} />
+            </Box>
           </Box>
         </Box>
       </Box>
